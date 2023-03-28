@@ -1,6 +1,6 @@
 import openai 
 import os
-openai.api_key = os.environ.get("API_KEY")
+openai.api_key = os.environ.get("API_KEY").strip()
 
 
 def call_openai(prompt, max_tokens=1200):
